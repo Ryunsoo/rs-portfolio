@@ -6,6 +6,21 @@
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,500,400);
 
+@font-face{
+	font-family: 'Noto-Bold';
+	src: url("../font/NotoSansKR-Bold.otf") format('opentype');
+}
+
+@font-face{
+	font-family: 'Noto-Black';
+	src: url("../font/NotoSansKR-Black.otf") format('opentype');
+}
+
+@font-face{
+	font-family: 'Noto';
+	src: url("../font/NotoSansKR-Regular.otf") format('opentype');
+}
+
 ::-moz-selection { /* Code for Firefox */
   color: #fff;
   background: #008ED6;
@@ -171,7 +186,7 @@ a {
 
 .navbar-fixed-top .navbar-brand,
 .navbar-fixed-top .navbar-nav > li > a {
-  color: #000;
+  color: #404040;
   font-weight: 700;
 }
 
@@ -185,29 +200,27 @@ a {
 
 .navbar-fixed-top.bottom .navbar-brand,
 .navbar-fixed-top.bottom .navbar-nav > li > a {
-  color: #000;
+  color: #404040;
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover {
-  color: #008ED6;
+  color: rgb(150,150,150);
 }
 
 .navbar-fixed-top .navbar-toggle {
   border-color: transparent;
 }
 
-.navbar-fixed-top .navbar-toggle .icon-bar {
+/* .navbar-fixed-top .navbar-toggle .icon-bar {
   background-color: #aaa;
-}
+} */
 
-.navbar-fixed-top .navbar-toggle:hover .icon-bar,
-.navbar-fixed-top .navbar-toggle:focus .icon-bar {
+.navbar-fixed-top .navbar-toggle:hover .icon-bar{
     background-color: #fff;
 }
 
-.navbar-fixed-top .navbar-toggle:hover,
-.navbar-fixed-top .navbar-toggle:focus {
-  background-color: #008ED6;
+.navbar-fixed-top .navbar-toggle:hover{
+  background-color: rgb(200,200,200);
 }
 
 @media (min-width:768px) {
@@ -244,24 +257,68 @@ a {
   position: relative;
   height: 100%;
   padding: 0;
-  background: linear-gradient(180deg,rgba(112,93,80,.8) 0,rgba(160,150,155,0.9) 90%), 
-  		url("../image/home.jpg") 50% no-repeat;
+  background: linear-gradient(180deg,rgba(38,38,38,0.8) 0,rgba(38,38,38,0.8) 90%), 
+  		url("../image/sabri.jpg") no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 #intro{
 	display: flex;
 	height: 100%;
-	justify-content: center;
+	align-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+}
+
+#intro>*{
+	width: 100%;
+	text-align: center;
 }
 
 #intro>.title{
+	font-family: "Noto-Bold";
 	font-weight: bold;
-	font-size: 35px;
-	width: 300px;
+	font-size: 45px;
 	color: white;
 }
+
+#intro>.sub_title{
+	font-family: "Noto-Bold";
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+#intro>.semi_title{
+	font-family: "Noto-Bold";
+	font-size: 20px;
+	color: #999999;
+}
+
+.horizon{
+	display: flex;
+	justify-content: center;
+}
+
+.horizon>div{
+	width: 150px;
+	height: 5px;
+	margin: 50px 0 30px 0;
+	background-color: #ff6666;
+}
+
+.intro_body{
+	font-family: "Noto";
+	font-size: 15px;
+	color: #e6e6e6;
+}
+
+.start{
+	margin-top: 100px;
+}
+
 
 /* .nav-slide a {
   position: absolute;

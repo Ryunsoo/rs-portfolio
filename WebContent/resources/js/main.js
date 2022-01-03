@@ -23,7 +23,7 @@ var SliderStatus = true;
 })(jQuery);
 
 // Header Slider
-(function($){
+/*(function($){
 
 	"use strict"
 
@@ -136,7 +136,7 @@ var SliderStatus = true;
 
 	startImageHeader();
 
-})(jQuery);
+})(jQuery);*/
 
 
 // TEMPLATE
@@ -149,12 +149,24 @@ var SliderStatus = true;
 
 	    $(function() {
 	        "use strict";
+			
+			let height = $(window).height(),
+				width = $(window).width();
+			
+			let value = height/width >= 0.9 ? height*0.8 : height;
+			
 	        $("#header").css({
-	            "height": ($(window).height()) + "px"
+	            "height": value + "px"
 	        });
 	        $(window).resize(function() {
+				
+				height = $(window).height();
+				width = $(window).width();
+				
+				value = height/width >= 0.9 ? height*0.8 : height;
+				
 	            $("#header").css({
-	                "height": ($(window).height()) + "px"
+	                "height": value + "px"
 	            });
 	        });
 	    });
