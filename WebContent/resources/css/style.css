@@ -705,18 +705,22 @@ span.quot-name:before {
   clear: both;
 }
 
-#about .big-image {
+.about-content{
+	
+}
+
+/* #about .big-image {
   position: absolute;
   left: 0;
   width: 95%;
-  height: 100%;
+  height:location 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1
-}
+} */
 
-.about-content {
+/* .about-content {
   margin-bottom: 25px;
   color: #666;
 }
@@ -755,7 +759,7 @@ span.quot-name:before {
   color: #222;
   text-transform: uppercase;
   font-size: 15px;
-}
+} */
 
 
 /*EXPERTIES STYLE*/
