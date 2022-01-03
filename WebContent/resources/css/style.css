@@ -82,14 +82,13 @@ h2 span {
 
 /*BOOTSTRAP RESET*/
 
-a, a:active, a:hover, a:focus{
+a, a:focus, a:active, a:hover{
   outline: 0;
   text-decoration: none;
-  color: #00B2FF;
 }
 
-a {
-  color: #008ED6;
+p{
+	font-family: 'Noto';
 }
 
 .container-fluid {
@@ -305,18 +304,26 @@ a {
 .horizon>div{
 	width: 150px;
 	height: 5px;
-	margin: 50px 0 30px 0;
-	background-color: #ff6666;
+	margin: 50px 0 40px 0;
+	background-color: #ff8080;
 }
 
 .intro_body{
 	font-family: "Noto";
 	font-size: 15px;
 	color: #e6e6e6;
+	margin-bottom: 90px;
 }
 
 .start{
-	margin-top: 100px;
+	font-family: 'Noto-Bold';
+	font-size: 30px;
+	color: #ff6666;
+	cursor: pointer;
+}
+
+.start:hover, .start:active .start:focus{
+	color: #ffaa80;
 }
 
 
@@ -556,7 +563,7 @@ a {
   padding-top: 40px;
 }
 
-.light {
+/* .light {
   background-color: #fff;
   color: #000;
 }
@@ -567,7 +574,7 @@ a {
   background-position: top left;
   background-repeat: repeat;
   color: #fff;
-}
+} */
 
 .light .title,
 .dark .title{
@@ -592,16 +599,17 @@ a {
 }
 
 header.title h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin: 50px 0px 50px 0;
+  padding-top: 50px;
   position: relative;
-  font-weight: 700;
+  font-family: 'Noto-Black';
   text-transform: uppercase;
   letter-spacing: 0;
 }
 
 .light h2 span {
-  color: #008ED6;
+  color: #ff6666;
 }
 
 .dark strong,
