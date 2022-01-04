@@ -87,7 +87,7 @@ a, a:focus, a:active, a:hover{
   text-decoration: none;
 }
 
-p{
+p, div{
 	font-family: 'Noto';
 }
 
@@ -581,7 +581,7 @@ p{
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 25px 55px;
+  padding: 0 25px 30px;
 }
 
 .light .title h2:after,
@@ -705,8 +705,98 @@ span.quot-name:before {
   clear: both;
 }
 
+#about>.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .about-content{
-	
+	width: 250px;
+	height: 80px;
+	display: flex;
+	margin: 20px 35px;
+}
+
+.about-icon{
+	font-size: 33px;
+	width: 32px;
+	text-align: center;
+	margin: 0 30px 0 20px;
+}
+
+.about-detail>div{
+	display: flex;
+}
+
+.detail-title{
+	height: 40px;
+	align-items: flex-end;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.detail-desc{
+	height: 50px;
+	align-items: baseline;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.detail-desc.copy{
+	position: relative;
+}
+
+.detail-desc.copy:hover{
+	cursor: pointer;
+	color: #ff6666;
+}
+
+.detail-desc.copy:hover::after{
+	content: '"copy"';
+	position: absolute;
+	top: 35px;
+	left: 50px;
+	width: 100px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #ff6666;
+	border-radius: 8px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	padding-top: 3px;
+}
+
+.detail-desc.copy:hover::before{
+	border-top: 0 solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #ff6666;
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 70px;
+}
+
+@-webkit-keyframes copy-text{
+	0%, 20%, 50%, 80%, 100%{-webkit-transform: scale(1,1);}
+	40%, 60% {-webkit-transform:scale(0,0);}
+}
+
+@keyframe copy-text{
+	0%, 20%, 50%, 80%, 100%{transform: scale(1,1);}
+	40%, 60% {transform:scale(0,0);}
+}
+
+.copy-text{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-name: copy-text;
+	animation-name: copy-text;
 }
 
 /* #about .big-image {

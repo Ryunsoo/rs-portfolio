@@ -138,12 +138,51 @@ var SliderStatus = true;
 
 })(jQuery);*/
 
-
 // TEMPLATE
 (function($){
-	$(document).on("ready", function(){
-		"use strict"
+	
+	// ABOUT-COPY TEXT
+	
+	let text = $('.copy');
+	
+	text.on('click', function() {
+		text.addClass('copy-text');
 		
+		setTimeout(function() {
+			text.removeClass('copy-text');
+		}, 1000)
+		
+		copyToClipBoard();
+		
+	})
+	
+	function copyToClipBoard() {
+		let content = $('.copy').html();
+		
+		navigator.clipboard.writeText(content)
+			.then(() => {})
+			.catch(err => {
+				NotSupportedClipboard(content);
+			})
+	}
+	
+	function NotSupportedClipboard(content) {
+		let about = document.querySelector('#about');
+		
+		let input = document.createElement('input');
+		input.value = content;
+		about.appendChild(input);
+		
+		input.focus();
+		input.select();
+		document.execCommand('copy');
+		
+		about.removeChild(input);
+	}
+	
+	$(document).on("ready", function(){
+		
+		"use strict"
 
 		//Header fit screen
 
@@ -226,8 +265,7 @@ var SliderStatus = true;
 	        }, 2000);
 	    });
 	});
-
-
+	
     // PORTFOLIO
 
     $(document).on("ready", function(){
