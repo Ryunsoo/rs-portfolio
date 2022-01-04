@@ -705,6 +705,16 @@ span.quot-name:before {
   clear: both;
 }
 
+/* 좀 더 생각해보고 지우기 */
+
+section{
+	margin-bottom: 90px;
+}
+
+section#header{
+	margin-bottom: 0;
+}
+
 #about>.container{
 	display: flex;
 	flex-wrap: wrap;
@@ -797,6 +807,14 @@ span.quot-name:before {
 	animation-duration: 1s;
 	-webkit-animation-name: copy-text;
 	animation-name: copy-text;
+}
+
+#skills{
+	background-color: #ff6666;
+}
+
+#skills>.container{
+	
 }
 
 /* #about .big-image {
@@ -1044,7 +1062,7 @@ span.quot-name:before {
 
 /*PORTFOLIO STYLE*/
 
-#portfolio {
+/* #portfolio {
   padding-bottom: 0;
 }
 
@@ -1178,7 +1196,7 @@ span.quot-name:before {
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
-}
+} */
 
 
 /*CONTACT SYTLE*/
