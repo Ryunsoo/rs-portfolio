@@ -258,11 +258,30 @@ var SliderStatus = true;
 	    });
 
 	    $(".skill-bar .percentage").appear(function() {
+		
 	        var element = $(this),
 	        	animation = element.data("value");
+
+			let parent = element.parent().width(),
+				percentArray = animation.split('%'),
+				percent = percentArray[0]/100;
+
 	        element.animate({
-	        	"width" : animation
+	        	"width" : parent*percent + 'px'
 	        }, 2000);
+
+			
+			$(window).resize(function() {
+				element = $('.skill-bar>li>percentage');
+				console.dir(element);
+	        	animation = element.data("value");
+
+				parent = element.parent().width(),
+				percentArray = animation.split('%'),
+				percent = percentArray[0]/100;
+					
+				element.width(parent*percent + 'px');
+			})
 	    });
 	});
 	

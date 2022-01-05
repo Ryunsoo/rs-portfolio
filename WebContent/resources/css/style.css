@@ -600,7 +600,7 @@ p, div{
 
 header.title h2 {
   font-size: 50px;
-  margin: 50px 0px 50px 0;
+  margin: 50px 0px 20px 0;
   padding-top: 50px;
   position: relative;
   font-family: 'Noto-Black';
@@ -708,7 +708,8 @@ span.quot-name:before {
 /* 좀 더 생각해보고 지우기 */
 
 section{
-	margin-bottom: 90px;
+	margin-bottom: 30px;
+	padding-bottom: 60px
 }
 
 section#header{
@@ -814,7 +815,40 @@ section#header{
 }
 
 #skills>.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+	.skill-wrap {
+		width: 560px;
+	}
+}
+
+@media (max-width: 500px) {
+	.skill-wrap {
+		width: 400px;
+	}
+}
+
+.skill-wrap{
 	
+}
+
+.skill-category{
+	font-family: 'Noto-Bold';
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px 0 #ffaa80;
+	margin-bottom: 10px;
+	
+}
+
+.skill-content{
+	background-color: white;
+	border-radius: 20px;
+	padding: 20px 15px;
 }
 
 /* #about .big-image {
@@ -896,6 +930,12 @@ section#header{
 }
 
 .skill-bar li em {
+    position: relative;
+    top: -30px;
+    font-style: normal;
+}
+
+.skill-bar li img {
     position: relative;
     top: -30px;
     font-style: normal;
