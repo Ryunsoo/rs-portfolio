@@ -906,7 +906,6 @@ section#header{
 }
 
 .archiving-content:hover{
-	/* transform: translateY(2%); */
 	transform: scale(1.03, 1.03);
 	transition-duration: 0.3s;
 }
@@ -917,6 +916,7 @@ section#header{
 	padding: 30px 45px;
 	box-shadow: 4px 4px 9px rgba(50, 50, 50, 0.5);
 	height: 240px;
+	min-width: 414px;
 }
 
 .archiving-content>.sub-title{
@@ -950,6 +950,34 @@ a.link:hover{
 
 .archiving-content ul>li{
 	margin-bottom: 7px;
+}
+
+#projects{
+	background-color: #ff6666;
+}
+
+#projects>.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project-wrap{
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 4px 4px 9px rgba(50, 50, 50, 0.5);
+	display: flex;
+}
+
+.project-wrap:hover{
+	transform: scale(1.03, 1.03);
+	transition-duration: 0.3s;
+}
+
+@media (min-width:1160px) {
+	.project-wrap{
+		width: 1100px;
+	}
 }
 
 /* #about .big-image {
