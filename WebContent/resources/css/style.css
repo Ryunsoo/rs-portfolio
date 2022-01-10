@@ -91,6 +91,10 @@ p, div{
 	font-family: 'Noto';
 }
 
+a{
+	font-family: 'Raleway', sans-serif;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -173,6 +177,10 @@ p, div{
 
 
 /*NAVIGATION STYLE*/
+
+.collapse{
+	font-family: 'Raleway', sans-serif;
+}
 
 .navbar-fixed-top,
 .navbar-fixed-top.bottom {
@@ -861,6 +869,26 @@ section#header{
 	box-shadow: 4px 4px 9px rgba(50, 50, 50, 0.5);
 }
 
+.skill-content.certificate{
+	display: flex;
+	align-items: center;
+	padding: 25px 35px;
+}
+
+.skill-content.certificate>img{
+	margin-right: 41px;
+}
+
+.skill-content.certificate>div{
+	font-size: 23px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0;
+	color: #4d4d4d;
+	text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.7)
+	
+}
+
 /* #about .big-image {
   position: absolute;
   left: 0;
@@ -973,6 +1001,8 @@ section#header{
   right: -20px;
   top: -35px;
   padding: 0px 5px;
+  font-weight: bold;
+  color: rgb(100,100,100);
 }
 
 .percentage:after {
