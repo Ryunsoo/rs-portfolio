@@ -23,7 +23,7 @@ var SliderStatus = true;
 })(jQuery);
 
 // Header Slider
-/*(function($){
+(function($){
 
 	"use strict"
 
@@ -136,76 +136,25 @@ var SliderStatus = true;
 
 	startImageHeader();
 
-})(jQuery);*/
+})(jQuery);
+
 
 // TEMPLATE
 (function($){
-	
-	// ABOUT-COPY TEXT
-	
-	let text = $('.copy');
-	
-	text.on('click', function() {
-		text.addClass('copy-text');
-		
-		setTimeout(function() {
-			text.removeClass('copy-text');
-		}, 1000)
-		
-		copyToClipBoard();
-		
-	})
-	
-	function copyToClipBoard() {
-		let content = $('.copy').html();
-		
-		navigator.clipboard.writeText(content)
-			.then(() => {})
-			.catch(err => {
-				NotSupportedClipboard(content);
-			})
-	}
-	
-	function NotSupportedClipboard(content) {
-		let about = document.querySelector('#about');
-		
-		let input = document.createElement('input');
-		input.value = content;
-		about.appendChild(input);
-		
-		input.focus();
-		input.select();
-		document.execCommand('copy');
-		
-		about.removeChild(input);
-	}
-	
 	$(document).on("ready", function(){
-		
 		"use strict"
+		
 
 		//Header fit screen
 
 	    $(function() {
 	        "use strict";
-			
-			let height = $(window).height(),
-				width = $(window).width();
-			
-			let value = height/width >= 0.9 ? height*0.8 : height;
-			
 	        $("#header").css({
-	            "height": value + "px"
+	            "height": ($(window).height()) + "px"
 	        });
 	        $(window).resize(function() {
-				
-				height = $(window).height();
-				width = $(window).width();
-				
-				value = height/width >= 0.9 ? height*0.8 : height;
-				
 	            $("#header").css({
-	                "height": value + "px"
+	                "height": ($(window).height()) + "px"
 	            });
 	        });
 	    });
@@ -256,43 +205,17 @@ var SliderStatus = true;
 	    }, {
 	        accY: -150
 	    });
-		
-		$(".skill-bar .percentage").appear(function() {
+
+	    $(".skill-bar .percentage").appear(function() {
 	        var element = $(this),
 	        	animation = element.data("value");
 	        element.animate({
 	        	"width" : animation
 	        }, 2000);
 	    });
-		
-	    /*$(".skill-bar .percentage").appear(function() {
-		
-	        var element = $(this),
-	        	animation = element.data("value");
-
-			let parent = element.parent().width(),
-				percentArray = animation.split('%'),
-				percent = percentArray[0]/100;
-
-	        element.animate({
-	        	"width" : parent*percent + 'px'
-	        }, 2000);
-
-			
-			$(window).resize(function() {
-				element = $('.skill-bar>li>percentage');
-				console.dir(element);
-	        	animation = element.data("value");
-
-				parent = element.parent().width(),
-				percentArray = animation.split('%'),
-				percent = percentArray[0]/100;
-					
-				element.width(parent*percent + 'px');
-			})
-	    });*/
 	});
-	
+
+
     // PORTFOLIO
 
     $(document).on("ready", function(){

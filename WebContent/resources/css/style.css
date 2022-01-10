@@ -222,7 +222,7 @@ p, div{
   background-color: rgb(200,200,200);
 }
 
-@media (min-width:768px) {
+@media (min-width:768px){
   .navbar-fixed-top{
     background-color: rgba(255,255,255,0.95);
     border: none;
@@ -248,6 +248,7 @@ p, div{
     color: #fff;
   }
 }
+
 
 
 /*HEADER STYLE*/
@@ -312,7 +313,7 @@ p, div{
 	font-family: "Noto";
 	font-size: 15px;
 	color: #e6e6e6;
-	margin-bottom: 90px;
+	margin-bottom: 70px;
 }
 
 .start{
@@ -817,11 +818,12 @@ section#header{
 #skills>.container{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
-@media (min-width: 500px) {
-	.skill-wrap {
-		width: 560px;
+@media (min-width: 1420px) {
+	#skills>.container {
+		width: 1400px;
 	}
 }
 
@@ -832,7 +834,14 @@ section#header{
 }
 
 .skill-wrap{
-	
+	margin: 20px 20px;
+	width: 400px;
+}
+
+.skill-content:hover{
+	/* transform: translateY(2%); */
+	transform: scale(1.03, 1.03);
+	transition-duration: 0.3s;
 }
 
 .skill-category{
@@ -840,15 +849,16 @@ section#header{
 	font-weight: bold;
 	font-size: 30px;
 	color: white;
-	text-shadow: 2px 2px 0 #ffaa80;
+	text-shadow: 2px 2px 2px #666666;
 	margin-bottom: 10px;
-	
+	padding-left: 20px;
 }
 
 .skill-content{
 	background-color: white;
 	border-radius: 20px;
-	padding: 20px 15px;
+	padding: 5px 38px 25px 38px;
+	box-shadow: 4px 4px 9px rgba(50, 50, 50, 0.5);
 }
 
 /* #about .big-image {
@@ -917,15 +927,17 @@ section#header{
 }
 
 .skill-bar li {
-    margin-bottom: 70px;
-    background: #000;
-    height: 10px;
+    /* margin-bottom: 70px; */
+    margin-top: 90px;
+    background: #cccccc;
+    height: 13px;
+    position: relative;
     border-radius: 3px;
-    border-left: 1px solid #111;
-    border-top: 1px solid #111;
-    border-right: 1px solid #333;
-    border-bottom: 1px solid #333;
-    width: 100.5%;
+    border-left: 2px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
     text-transform: uppercase;
 }
 
@@ -937,14 +949,13 @@ section#header{
 
 .skill-bar li img {
     position: relative;
-    top: -30px;
-    font-style: normal;
 }
 
 .percentage {
-    height: 5px;
+    height: 8px;
+    border-radius: 2px;
     margin: 2px 1px;
-    background: #2187e7;
+    background: #ff8080;
     position: absolute;
     box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
 }
@@ -965,7 +976,7 @@ section#header{
 }
 
 .percentage:after {
-  border-top: 4px solid #008ED6;
+  border-top: 4px solid #ff6666;
   border-left: 4px solid rgba(0,0,0,0);
   border-right: 4px solid rgba(0,0,0,0);  
 }
