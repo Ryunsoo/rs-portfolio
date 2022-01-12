@@ -511,6 +511,8 @@ var SliderStatus = true;
 
 $(document).ready(function(){
   $('.project-slide').slick({
-    /*setting-name: setting-value*/
+    arrows: false,
+	dots: true,
+	dotsClass: 'slide-dots'
   });
 });
