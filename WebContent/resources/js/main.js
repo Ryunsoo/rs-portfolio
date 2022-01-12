@@ -508,3 +508,9 @@ var SliderStatus = true;
 	});
 
 })(jQuery);
+
+$(document).ready(function(){
+  $('.project-slide').slick({
+    /*setting-name: setting-value*/
+  });
+});
