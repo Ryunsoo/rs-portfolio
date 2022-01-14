@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HRS</title>
+	
+	<link rel="shortcut icon" href="resources/image/favicon.ico">
+	
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="resources/css/all.css"/>
+    <link rel="stylesheet" href="resources/css/animate.css"/>
+
+    <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="resources/js/plugins.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="resources/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="resources/css/slick-theme.css"/>
+	<link rel="stylesheet" href="resources/css/style.css" />
+	</head>
+	<body>
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">Ryunsoo's Portfolio</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li><a href="#header">Home</a></li> -->
+              <li><a href="#about">About me</a></li>              
+              <li><a href="#skills">Skills</a></li>
+			  <li><a href="#archiving">Archiving</a></li>
+			  <li><a href="#projects">Projects</a></li>
+              <li><a href="#trace">Trace</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+	
+	  
+	  <!-- home background -->
+	  <div id="intro">
+	  	<div class="title">황륜수</div>
+	  	<div class="sub_title">백엔드 개발자 포트폴리오</div>
+	  	
+	  	<div class="semi_title">Hwang Ryunsoo (Junior Web Back-End Developer)</div>
+	  	<div class="horizon"><div></div></div>
+	  	
+	  	<div class='intro_body'>안녕하세요. 성실함과 끈기를 가진 백엔드 개발자입니다.<br>도전을 두려워하지 않고 끝없이 발전하는 모습을 보여드리겠습니다!</div>
+	  	<div><a href="#about" class="start">START <i class="fas fa-chevron-circle-down"></i></a></div>
+	  </div>
+	
+        </section>
+
+      </div><!-- /.header-slide -->
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>About <span>Me</span></h2>
+      </header>
+      
+      <div class='container'>
+      	<div class='about-content animated' data-animate="fadeInUp">
+      		<div class='about-icon'><i class="fas fa-user"></i></div>
+      		<div class='about-detail'>
+      			<div class='detail-title'>이름</div>
+      			<div class='detail-desc'>황륜수 (<i class="fas fa-venus"></i>)</div>
+      		</div>
+      	</div>
+      	<div class='about-content animated' data-animate="fadeInUp"'>
+      		<div class='about-icon'><i class="fas fa-calendar-check"></i></div>
+      		<div class='about-detail'>
+      			<div class='detail-title'>생년월일</div>
+      			<div class='detail-desc'>99.02.25</div>
+      		</div>
+      	</div>
+      	<div class='about-content animated' data-animate="fadeInUp"'>
+      		<div class='about-icon'><i class="fas fa-map-marker-alt"></i></div>
+      		<div class='about-detail'>
+      			<div class='detail-title'>주소지</div>
+      			<div class='detail-desc'>경기도 성남</div>
+      		</div>
+      	</div>
+      	<div class='about-content animated' data-animate="fadeInUp"'>
+      		<div class='about-icon'><i class="fas fa-phone"></i></div>
+      		<div class='about-detail'>
+      			<div class='detail-title'>연락처</div>
+      			<div class='detail-desc'>010-9342-1681</div>
+      		</div>
+      	</div>
+      	<div class='about-content animated' data-animate="fadeInUp"'>
+      		<div class='about-icon'><i class="fas fa-at"></i></div>
+      		<div class='about-detail'>
+      			<div class='detail-title'>이메일</div>
+      			<div class='detail-desc copy'>babyfox225@naver.com</div>
+      		</div>
+      	</div>
+      	<div class='about-content animated' data-animate="fadeInUp"'>
+      		<div class='about-icon'><i class="fas fa-graduation-cap"></i></div>
+      		<div class='about-detail'>
+      			<div class='detail-title'>학력</div>
+      			<div class='detail-desc'>신구대학교<br>(그래픽아츠)</div>
+      		</div>
+      	</div>
+      </div>
+
+    </section>
+	
+	    <!-- SKILLS -->
+
+    <section id="skills" class="light">
+      <header class="title">
+        <h2>Skills</h2>
+      </header>
+	  
+	  <div class='container'>
+	  	<div class='skill-wrap animated' data-animate="fadeInUp">
+	  		<div class='skill-category'>Back-end</div>
+	  		<div class="skill-content">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="90%"></span><img src="resources/image/java.png" width='100' style="top: -68px; left: 5px"></li>
+                <li><span class="percentage" data-value="90%"></span><img src="resources/image/oracleDB.png" width='100' style="top: -55px; left: 7px"></li>
+                <li><span class="percentage" data-value="80%"></span><img src="resources/image/jsp3.png" width='60' style="top: -70px; left: 3px"></li>
+                <li><span class="percentage" data-value="70%"></span><img src="resources/image/spring.png" width='130' style="top: -45px; left: 7px"></li>
+                <li><span class="percentage" data-value="70%"></span><img src="resources/image/mybatis.jpeg" width='140' style="top: -50px; left: 5px"></li>
+              </ul>
+            </div>
+	  	</div>
+	  	<div class='skill-wrap animated' data-animate="fadeInUp">
+	  		<div class='skill-category'>Front-end</div>
+	  		<div class="skill-content">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="90%"></span><img src="resources/image/html.png" width='60' style="top: -65px; left: 0px"></li>
+                <li><span class="percentage" data-value="80%"></span><img src="resources/image/css.png" width='45' style="top: -68px; left: 10px"></li>
+                <li><span class="percentage" data-value="70%"></span><img src="resources/image/js.png" width='45' style="top: -68px; left: 10px"></li>
+                <li><span class="percentage" data-value="70%"></span><img src="resources/image/jquery.png" width='130' style="top: -45px; left: 7px"></li>
+              </ul>
+            </div>
+	  	</div>
+	  	<div class='skill-wrap animated' data-animate="fadeInUp">
+	  		<div class='skill-category'>Deployment</div>
+	  		<div class="skill-content">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="60%"></span><img src="resources/image/Apache_Tomcat_Logo.png" width='100' style="top: -65px; left: 5px"></li>
+                <li><span class="percentage" data-value="60%"></span><img src="resources/image/oraclecloud.png" width='100' style="top: -50px; left: 5px"></li>
+                <li><span class="percentage" data-value="50%"></span><img src="resources/image/docker.png" width='130' style="top: -45px; left: 5px"></li>
+              </ul>
+            </div>
+	  	</div>
+	  	<div class='skill-wrap animated' data-animate="fadeInUp">
+	  		<div class='skill-category'>Communication</div>
+	  		<div class="skill-content">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="90%"></span><img src="resources/image/trello.png" width='100' style="top: -48px; left: 5px"></li>
+                <li><span class="percentage" data-value="90%"></span><img src="resources/image/oven.png" width='80' style="top: -82px; left: 5px"></li>
+                <li><span class="percentage" data-value="90%"></span><img src="resources/image/erdcloud.png" width='80' style="top: -82px; left: 5px"></li>
+              </ul>
+            </div>
+	  	</div>
+	  	<div class='skill-wrap animated' data-animate="fadeInUp">
+	  		<div class='skill-category'>Version Control</div>
+	  		<div class="skill-content">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="80%"></span><img src="resources/image/git.png" width='90' style="top: -55px; left: 5px"></li>
+                <li><span class="percentage" data-value="80%"></span><img src="resources/image/github.png" width='120' style="top: -45px; left: 5px"></li>
+              </ul>
+            </div>
+	  	</div>
+	  	<div class='skill-wrap animated' data-animate="fadeInUp">
+	  		<div class='skill-category'>Certificate</div>
+	  		<div class="skill-content certificate">
+                <img src="resources/image/kdata.jpg" width='120'><div>SQL Developer</div>
+            </div>
+	  	</div>
+	  </div>
+	  
+    </section>
+
+
+    <!-- ARCHIVING -->
+
+    <section id="archiving" class="light">
+      <header class="title">
+        <h2>Archiving</h2>
+      </header>
+      
+      <div class='container'>
+      	<div class='archiving-wrap animated' data-animate="fadeInUp">
+	  		<div class='archiving-title'><img src="resources/image/github.png" width='150'></div>
+	  		<div class="archiving-content">
+	  			<div class='sub-title'>코드 저장소</div>
+	  			<div><a href='https://github.com/Ryunsoo' class='link' target='_blank'>https://github.com/Ryunsoo</a></div>
+	  			<div>
+	  				<ul>
+	  					<li>프로젝트 소스 코드</li>
+	  					<li>혼자 공부하거나 만들어본 웹 소스 코드</li>
+	  					<li>학원 강의 시간에 배운 내용의 소스 코드</li>
+	  				</ul>
+	  			</div>
+            </div>
+	  	</div>
+	  	<div class='archiving-wrap animated' data-animate="fadeInUp">
+	  		<div class='archiving-title'><img src="resources/image/docker.png" width='150'></div>
+	  		<div class="archiving-content">
+	  			<div class='sub-title'>이미지 저장소</div>
+	  			<div><a href='https://hub.docker.com/search?q=babyfox225&type=image' class='link' target='_blank'>https://hub.docker.com/babyfox225</a></div>
+	  			<div>
+	  				<ul>
+	  					<li>프로젝트 배포 환경 이미지</li>
+	  					<li>docker 배포 공부 시 업로드한 이미지</li>
+	  				</ul>
+	  			</div>
+            </div>
+	  	</div>
+      </div>
+      
+    </section>
+	
+	    <!-- PROJECTS -->
+
+    <section id="projects" class="light">
+      <header class="title">
+        <h2>Projects</h2>
+      </header>
+	
+	  <div class='container'>
+	  	<div class='project-category'>팀 프로젝트</div>
+	  	<div class='project-wrap animated' data-animate="fadeInUp">
+	  		<div class='project-title center-text'>자취해협</div>
+	  		<div class='project-sub-title center-text'>2021.11 ~ 2021.12 (6인 프로젝트)</div>
+	  		<div class='project-content'>
+	  			<div class="project-slide">
+				    <div><img src="resources/image/main-page-small.png"></div>
+				    <div><img src="resources/image/login-page.png"></div>
+				    <div><img src="resources/image/my-page.png"></div>
+				    <div><img src="resources/image/my-hehyeop-page.png"></div>
+				    <div><img src="resources/image/company-join-page-small.png"></div>
+				    <div><img src="resources/image/calendar-page.png"></div>
+				</div>
+				<div class='project-desc'>
+					<div><strong>1인 가구를 위한 서비스를 제공하는 웹사이트</strong>로, 회원들이 설정한 지역에 대한 필터링을 중시하며 개발하였습니다. 서비스 제공 과정에서 회원들 간의 소통이 중요했기 때문에 채팅과 푸시 알림 기능을 함께 제공하게 되었습니다.
+					<br><br>일반회원이 사용가능한 많은 기능 및 페이지 뿐 아니라 업체회원을 위한 페이지, 업체 서비스에 대한 신뢰를 위해 업체회원 승인업무를 할 수 있는 admin 페이지까지 <strong>회원관리에 있어 철저하게 진행</strong>하였습니다.
+					<br><br>로고부터 페이지 구성 및 디자인까지 직접 진행했기 때문에 적지 않은 양을 소화해야 했는데도 팀원들과의 소통 및 작업이 원활하게 이루어져 만족스러웠던 프로젝트입니다.</div>
+					<hr class='project-hr'>
+					<div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> 주요기능</div>
+							<div class='desc-content'>업체-고객 서비스 매칭, 공동구매, 식품 및 지출 기록/관리, 커뮤니티, 채팅/알림 등</div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Domain</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://www.jachwi-haehyeop.com'>www.jachwi-haehyeop.com</a></div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Github</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://github.com/Ryunsoo/final-project'>github.com/Ryunsoo/final-project</a></div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Environment</div>
+							<div class='desc-content'>Spring Framework, Oracle DB, Mybatis, JSP, JS, CSS3, JQuery, tomcat</div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> DB 설계</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://www.erdcloud.com/d/vu39zHqbhXBEcAaz5'>www.erdcloud.com/jachwi-haehyeop</a></div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Deployment</div>
+							<div class='desc-content'>Oracle Cloud, Docker (<a class='link docker-link' target='_blank' href='https://hub.docker.com/r/babyfox225/jachwi-haehyeop'>hub.docker.com/r/babyfox225/jachwi-haehyeop</a>)</div>
+						</div>
+					</div>
+				</div>
+	  		</div>
+	  	</div>
+	  	<div class='project-wrap animated' data-animate="fadeInUp">
+	  		<div class='project-title center-text'>MediBook</div>
+	  		<div class='project-sub-title center-text'>2021.09 ~ 2021.10 (6인 프로젝트)</div>
+	  		<div class="project-slide" style="width: 80%">
+			    <div><img src="resources/image/schedule-main.png"></div>
+			    <div><img src="resources/image/schedule-date-click.png"></div>
+			    <div><img src="resources/image/schedule-add.png"></div>
+			</div>
+	  		<div class='semi-project-content'>
+				<div class='semi-project-desc'>
+					<div><strong>의료정보와 함께 진료기록 및 예약 스케줄러를 제공하는 웹사이트</strong>로, 처음 진행해본 프로젝트라 기본에 충실한 웹사이트라고 할 수 있습니다. 저의 경우는 스케줄러 부분을 담당하였으며, 다른 메뉴들 보다 사용자의 데이터를 많이 다루는 파트이다 보니 <strong>입력값에 대한 유효성 검사(validator)에 중점을 두고</strong> 진행하였습니다.
+					<br><br>메뉴별 업무 분배로 개인의 역량도 중요했지만, 팝업창을 만들어보면서 검색 파트를 담당했던 팀원들과 소통하며 작업할 수 있어 더욱 뿌듯했습니다. 또한 서로 어려움을 겪었던 부분에 있어 적극적으로 도움을 주고 받을 수 있었습니다.</div>
+				</div>
+				<div class='semi-horizon'></div>
+				<div class='semi-project-compose'>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> 주요기능</div>
+							<div class='desc-content'>병원 및 약국 검색, 진료 스케줄러, 진료 및 복약 알림, 게시판 등</div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Github</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://github.com/MinHyup1/semiProject'>github.com/MinHyup1/semiProject</a></div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Environment</div>
+							<div class='desc-content'>Servlet, Oracle DB, JSP, JS, CSS3, tomcat</div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> DB 설계</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://www.erdcloud.com/d/pd3cytGXpPmfCgSJK'>www.erdcloud.com/medibook</a></div>
+						</div>
+					</div>
+	  		</div>
+	  	</div>
+	  	
+	  	<div class='project-category'>개인 프로젝트</div>
+	  	<div class='project-wrap animated' data-animate="fadeInUp">
+	  		<div class='project-title center-text'>포트폴리오 사이트</div>
+	  		<div class='project-sub-title center-text'>2021.12 ~ 2022.01</div>
+	  		<div class='project-content'>
+	  			<div class="project-slide portfolio-site">
+				    <div><img src="resources/image/page1.png"></div>
+				    <div><img src="resources/image/page2.png"></div>
+				    <div><img src="resources/image/page3.png"></div>
+				</div>
+				<div class='project-desc'>
+					<div><strong>포트폴리오 웹사이트</strong>입니다. static 페이지이기 때문에 서버단을 작업하진 않았지만, 그동안 기능에 집중하다 보니 지나쳤던 프론트단에 보다 신경써서 작업할 수 있었습니다. 그 과정에서 또 한번 공부할 수 있었던 계기가 된 것 같습니다.
+					<br><br>특히 어느 화면에서도 내용이 잘 유지될 수 있도록 <strong>반응형 웹페이지</strong>를 만들기 위해 노력했습니다. 또한 앞으로 포트폴리오를 더 채워나갈 수 있도록 css 혹은 js에서의 클래스 통일 및 기능 모듈화에 신경쓰기도 했습니다.
+					<hr class='project-hr'>
+					<div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> 주요기능</div>
+							<div class='desc-content'>자기소개 및 인적사항, 기술 숙련도, github 등의 여러 링크, 프로젝트 소개 등</div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Domain</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://www.jachwi-haehyeop.com'>www.jachwi-haehyeop.com</a></div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Github</div>
+							<div class='desc-content'><a class='link' target='_blank' href='https://github.com/Ryunsoo/rs-portfolio'>github.com/Ryunsoo/rs-portfolio</a></div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Environment</div>
+							<div class='desc-content'>html, css, js, JQuery, slick</div>
+						</div>
+						<div>
+							<div class='desc-title'><i class="fas fa-angle-right"></i> Deployment</div>
+							<div class='desc-content'>Github</div>
+						</div>
+					</div>
+				</div>
+	  		</div>
+	  	</div>
+	  </div>
+    </section>	
+
+    <!-- TRACE -->
+
+     <section id="trace" class="light">
+      <header class="title">
+        <h2>Trace</h2>
+      </header>
+	  
+	  <div class='container'>
+	  	<div class='kh'>
+		  	<div><img src='resources/image/kh.jpeg' style="width: 300px"></div>
+		  	<div class='vertical'></div>
+		  	<div class='kh-desc'>
+		  		<div class='company'>KH 정보교육원</div>
+		  		<div class='class'>(디지털컨버전스) UI/UX 스마트 콘텐츠 웹기반<br>융합 응용SW개발자 양성과정(3)</div>
+		  		<div class='period'>2021.05 ~ 2021.12</div>
+		  		<div class='curriculum'>커리큘럼</div>
+		  		<div><i class="fas fa-circle"></i> ORACLE</div>
+		  		<div class='indent'>SQL Programming</div>
+		  		<div><i class="fas fa-circle"></i> JAVA</div>
+		  		<div class='indent not'>Servlet / JSP / JDBC</div>
+		  		<div class='indent'>Spring Framework / Mybatis / Ajax</div>
+		  		<div><i class="fas fa-circle"></i> HTML / CSS / JavaScript</div>
+		  	</div>
+		</div>
+	  </div>
+	  
+    </section>
+
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="resources/js/slick.min.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
+	</body>
+</html>
