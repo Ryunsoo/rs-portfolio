@@ -1208,15 +1208,16 @@ a.link:hover{
 	
 }
 
-
+.portfolio-site.slick-dotted.slick-slider{
+	max-height: none;
+}
 
 
 
 
 #trace>.container{
 	display: flex;
-	padding: 10px 150px;
-	justify-content: center;
+	/* justify-content: center; */
 }
 
 .kh{
@@ -1224,7 +1225,12 @@ a.link:hover{
 	display: flex;
 }
 
-@media(min-width:700px) {
+
+@media(min-width:1200px) {
+	#trace>.container{
+		padding: 10px 150px;
+	}
+	
 	.kh{
 		justify-content: space-between;
 	}
@@ -1236,11 +1242,33 @@ a.link:hover{
 	}
 	
 	.kh-desc{
-		
+		width: 50%;
 	}
 }
 
-@media(max-width:700px) {
+@media(min-width:992px) and (max-width:1200px) {
+	#trace>.container{
+		/* padding: 10px 50px; */
+		width: 55%;
+	}
+	
+	.kh{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.kh-desc{
+		width: 100%;
+		margin-top: 60px;
+	}
+	
+}
+
+@media(min-width:690px) and (max-width:992px) {
+	#trace>.container{
+		padding: 10px 150px;
+	}
+	
 	.kh{
 		justify-content: center;
 		flex-wrap: wrap;
@@ -1251,6 +1279,66 @@ a.link:hover{
 	}
 }
 
+@media(max-width:690px) {
+	#trace>.container{
+		width: 65%;
+	}
+	
+	.kh{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.kh-desc{
+		margin-top: 60px;
+	}
+}
+
+.company{
+	font-size: 28px;
+	font-family: 'Noto-Bold';
+	font-weight: bold;
+	letter-spacing: 0;
+	color: #404040;
+	margin-bottom: 18px;
+}
+
+.class{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.period{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #999999;
+}
+
+.curriculum{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.curriculum~div{
+	font-size: 15px;
+}
+
+.curriculum~div>i{
+	font-size: 12px;
+	color: #4d4d4d;
+}
+
+.indent{
+	padding-left: 15px;
+	margin-bottom: 12px;
+}
+
+.not{
+	margin-bottom: 0px;
+}
 
 /* @media (min-width:1160px) {
 	.project-wrap{
